@@ -1,0 +1,333 @@
+:root {
+    --projectpurple: #bcabd2 ;
+    --projectgreen: #5b7965 ;
+    --projcetpink: #e894a9 ;
+    --projectorange: #ffdfcd ;
+    --projectteal: #c4d9d4 ;
+    --projectcream: #c4d9d4 ;
+    --projectlightpink: #f8dbde ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--projectgreen);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: dynapuff;
+    color: white;
+    font-size: 2em;
+}
+
+nav {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 20px; */
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    /* margin: 10px; */
+    flex: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--projectcream);
+    font-family: raleway;
+    padding: 10px;
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container {
+    height: 400px;
+    display: grid;
+    grid-template: 100% / 50% 50%;
+    background-color: lightblue;
+}
+
+.container .item1 {
+    background: url(./images/jaimie-flowers.jpg);
+    background-size: cover;
+    flex: 1;
+}
+
+.container .item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--projectteal);
+    
+}
+
+h3 {
+    color: lightpink;
+    font-family: dynapuff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--projectgreen);
+    padding: 10px;
+    font-family: dynapuff;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--projectorange);
+    width: 100%;
+    height: 350px;
+}
+
+.container3 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container3 .item4 {
+    width: 200px;
+    height: 200px;
+    background: url(./images/turtle.jpg);
+    background-size: cover;
+}
+
+.container3 .item5 {
+    width: 200px;
+    height: 200px;
+    background: url(./images/ice-cream.jpg);
+    background-size: cover;
+}
+
+.container3 .item6 {
+    width: 200px;
+    height: 200px;
+    background: url(./images/dog-poster.jpg);
+    background-size: cover;
+}
+
+.container3 div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container4 {
+    width: 100%;
+    height: 600px;
+    background-color: var(--projectpurple);
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    position: relative;
+}
+
+.container4 .item7 {
+    position: relative;
+    display: flex;
+    background: url(./images/jaimie-sitting.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container4 .item7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170%;
+    height: 300%;
+    background-color: var(--projectlightpink);
+    opacity: 0.8 ;
+    transition: 0.5s;
+    transform: translate(800px, 300px) rotate(45deg);
+}
+
+.container4 .item7:hover::before {
+    transform: translate(-50px,-150px) rotate(45deg);
+}
+
+.container4 .item7 h3 {
+    color: var(--projectgreen);
+    transform: translate(200px, -200px);
+    transition: all 0.5s;
+}
+
+.container4 .item7:hover h3 {
+    transform: translate(0, 0);
+}
+
+.container4 .item8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.container4 .item8 .about {
+    background-color: var(--projcetpink);
+    color: white;
+    padding: 10px;
+    width: 50px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: background-color 0.25s;
+}
+
+.container4 .item8 .about:hover {
+    background-color: var(--projectteal);
+}
+
+.container4 .item8 .about:active {
+    background-color: var(--projectgreen);
+    color: white;
+}
+
+.container4 .item10 {
+    background: url(./images/food-sketch.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container4 .item10::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170%;
+    height: 300%;
+    background-color: var(--projectlightpink);
+    opacity: 0.8 ;
+    transition: 0.5s;
+    transform: translate(800px, 300px) rotate(45deg);
+}
+
+.container4 .item10:hover::before {
+    transform: translate(-50px,-150px) rotate(45deg);
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+.container4 .item10 h3 {
+    color: var(--projectgreen);
+    transform: translate(200px, -200px);
+    transition: all 0.5s;
+}
+
+.container4 .item10:hover h3 {
+    transform: translate(0, 0);
+}
+
+.container4 .item9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--projectteal);
+}
+
+.container4 .item9 .info {
+    background-color: var(--projcetpink);
+    color: white;
+    padding: 10px;
+    width: 200px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: background-color 0.25s;
+}
+
+.container4 .item9 .info:hover {
+    background-color: var(--projectpurple);
+}
+
+.container4 .item9 .info:active {
+    background-color: var(--projectgreen);
+    color: white;
+}
+
+div {
+    font-family: raleway;
+}
+
+.contact {
+    width: 100%;
+    height: 150px;
+    background-color: var(--projectorange);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.contact:hover {
+    background-color: var(--projectpurple);
+}
+
+p {
+    color: white;
+    font-family: raleway;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--projectgreen);
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: raleway;
+}
